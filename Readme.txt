@@ -445,14 +445,14 @@
       },
       {
         name: "Frankenstein",
-        category: "Bustos y esculturas",
-        desc: "Busto esculpido y pintado a mano con carácter clásico.",
+        category: "Decoración y cojines",
+        desc: "Almohada personalizada y pintada a mano.",
         image: "images/frankenstein.jpg"
       },
       {
         name: "Nosferatu",
-        category: "Bustos y esculturas",
-        desc: "Busto expresionista en escala de grises.",
+        category: "Decoración y cojines",
+        desc: "Almohada personalizada y pintada a mano.",
         image: "images/nosferatu.jpg"
       },
       {
