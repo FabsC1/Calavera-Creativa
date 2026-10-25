@@ -84,6 +84,26 @@
         transition: none !important;
       }
     }
+/* Quita el círculo del Hero y centra su contenido */
+#inicio .aspect-square {
+  display: none !important;
+}
+
+#inicio .grid {
+  display: block !important;
+  min-height: 0 !important;
+}
+
+#inicio .grid > div:first-child {
+  max-width: 56rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+#inicio .grid > div:first-child > .mt-8 {
+  justify-content: center;
+}
+    
   </style>
 </head>
 
