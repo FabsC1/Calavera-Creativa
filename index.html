@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090514">
+  <meta name="description" content="Pinturas, bustos y piezas personalizadas de terror creadas a mano por Jessi Orianti, en Costa Rica.">
   <title>Calavera Creativa | Arte macabro hecho a mano</title>
-  <meta name="description" content="Pinturas, bustos y piezas personalizadas de terror, creadas a mano por Jessi Orianti en Costa Rica.">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -27,65 +27,47 @@
   </script>
 
   <style>
-    :root {
-      color-scheme: dark;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       background: #090514;
       color: #f3f4f6;
       font-family: Inter, ui-sans-serif, system-ui, sans-serif;
     }
-
     .mist {
       background:
         radial-gradient(ellipse at 15% 25%, #7e22ce2e, transparent 34%),
         radial-gradient(ellipse at 85% 65%, #a855f71c, transparent 35%),
         linear-gradient(135deg, #090514, #120a22 55%, #090514);
     }
-
     .card {
       background: linear-gradient(145deg, #29164a99, #120a22);
       border: 1px solid #d8b4fe24;
+      transition: transform .25s, border-color .25s, box-shadow .25s;
     }
-
     .card:hover {
       border-color: #b026ff99;
       box-shadow: 0 0 28px #b026ff25;
       transform: translateY(-4px);
     }
-
     .art-image {
       background: radial-gradient(circle at 50% 35%, #542879, #1a102b 65%, #100a1c);
     }
-
     .focus-ring:focus-visible {
       outline: 2px solid #d8b4fe;
       outline-offset: 3px;
     }
-
     dialog {
       color: #f3f4f6;
+      max-height: 90vh;
     }
-
     dialog::backdrop {
       background: #05020bd9;
       backdrop-filter: blur(5px);
     }
-
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
     @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
+      *, *::before, *::after {
         scroll-behavior: auto !important;
         transition: none !important;
       }
@@ -96,21 +78,15 @@
 <body>
   <header class="sticky top-0 z-40 border-b border-white/10 bg-night/90 backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
-      <a
-        href="#inicio"
-        class="focus-ring flex items-center gap-3 rounded-lg"
-        aria-label="Calavera Creativa, inicio"
-      >
+      <a href="#inicio" class="focus-ring flex items-center gap-3 rounded-lg" aria-label="Calavera Creativa, inicio">
         <img
           src="logo-calavera-creativa.png"
-          alt="Logo Calavera Creativa"
+          alt="Logo de Calavera Creativa"
           class="h-12 w-12 rounded-full object-cover"
           onerror="this.style.display='none'"
         >
         <span>
-          <strong class="block text-sm tracking-wide text-white sm:text-base">
-            CALAVERA CREATIVA
-          </strong>
+          <strong class="block text-sm tracking-wide text-white sm:text-base">CALAVERA CREATIVA</strong>
           <span class="text-xs text-lilac">por Jessi Orianti</span>
         </span>
       </a>
@@ -134,10 +110,7 @@
           <a class="hover:text-lilac" href="#encargos">Encargos</a>
           <a class="hover:text-lilac" href="#vendidas">Obras vendidas</a>
           <a class="hover:text-lilac" href="#contacto">Contacto</a>
-          <a
-            class="rounded-full border border-violet/60 px-4 py-2 text-lilac hover:bg-violet/15"
-            href="tel:+50689890021"
-          >
+          <a class="rounded-full border border-violet/60 px-4 py-2 text-lilac hover:bg-violet/15" href="tel:+50689890021">
             +506 8989-0021
           </a>
         </div>
@@ -149,30 +122,18 @@
     <section id="inicio" class="mist relative overflow-hidden">
       <div class="mx-auto grid min-h-[570px] max-w-7xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:py-28">
         <div>
-          <p class="mb-4 text-sm font-semibold uppercase tracking-[.25em] text-lilac">
-            Arte oscuro, hecho a mano
-          </p>
-
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[.25em] text-lilac">Arte oscuro, hecho a mano</p>
           <h1 class="max-w-2xl text-4xl font-black leading-tight sm:text-6xl">
             Arte Macabro y Piezas Únicas de Terror
           </h1>
-
           <p class="mt-6 max-w-xl text-lg leading-8 text-white/70">
             Pinturas, bustos y artículos personalizados hechos a mano para verdaderos amantes del horror.
           </p>
-
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#catalogo"
-              class="focus-ring rounded-full bg-violet px-6 py-3 text-center font-bold text-white shadow-glow hover:bg-purple-500"
-            >
+            <a href="#catalogo" class="focus-ring rounded-full bg-violet px-6 py-3 text-center font-bold text-white shadow-glow hover:bg-purple-500">
               Ver catálogo de obras
             </a>
-
-            <a
-              href="#encargos"
-              class="focus-ring rounded-full border border-lilac/50 px-6 py-3 text-center font-semibold text-lilac hover:bg-white/5"
-            >
+            <a href="#encargos" class="focus-ring rounded-full border border-lilac/50 px-6 py-3 text-center font-semibold text-lilac hover:bg-white/5">
               Encargar pieza personalizada
             </a>
           </div>
@@ -182,9 +143,7 @@
           <div class="art-image flex h-full items-center justify-center rounded-full border border-white/10 text-center">
             <div class="px-8">
               <span class="text-7xl" aria-hidden="true">☠</span>
-              <p class="mt-4 text-sm uppercase tracking-[.22em] text-lilac">
-                Belleza en lo inquietante
-              </p>
+              <p class="mt-4 text-sm uppercase tracking-[.22em] text-lilac">Belleza en lo inquietante</p>
             </div>
           </div>
         </div>
@@ -197,25 +156,16 @@
           <p class="text-sm uppercase tracking-[.2em] text-lilac">Piezas únicas</p>
           <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Catálogo de obras</h2>
         </div>
-
         <p class="max-w-lg text-sm leading-6 text-white/60">
-          Cada creación tiene detalles propios. Consulta disponibilidad y opciones de personalización directamente con Jessi.
+          Consulta disponibilidad y opciones de personalización directamente con Jessi.
         </p>
       </div>
 
-      <div id="filters" class="scrollbar-hide mb-8 flex gap-2 overflow-x-auto pb-2" aria-label="Filtrar catálogo">
-        <button data-filter="Todos" class="filter-btn rounded-full bg-violet px-4 py-2 text-sm font-semibold">
-          Todos
-        </button>
-        <button data-filter="Bustos y esculturas" class="filter-btn rounded-full border border-white/15 px-4 py-2 text-sm">
-          Bustos y esculturas
-        </button>
-        <button data-filter="Evil Dolls" class="filter-btn rounded-full border border-white/15 px-4 py-2 text-sm">
-          Evil Dolls
-        </button>
-        <button data-filter="Decoración y cojines" class="filter-btn rounded-full border border-white/15 px-4 py-2 text-sm">
-          Decoración y cojines
-        </button>
+      <div class="scrollbar-hide mb-8 flex gap-2 overflow-x-auto pb-2" aria-label="Filtrar catálogo">
+        <button data-filter="Todos" class="filter-btn rounded-full bg-violet px-4 py-2 text-sm font-semibold">Todos</button>
+        <button data-filter="Bustos y esculturas" class="filter-btn rounded-full border border-white/15 px-4 py-2 text-sm">Bustos y esculturas</button>
+        <button data-filter="Evil Dolls" class="filter-btn rounded-full border border-white/15 px-4 py-2 text-sm">Evil Dolls</button>
+        <button data-filter="Decoración y cojines" class="filter-btn rounded-full border border-white/15 px-4 py-2 text-sm">Decoración y cojines</button>
       </div>
 
       <div id="productGrid" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
@@ -228,35 +178,21 @@
             <p class="text-sm uppercase tracking-[.2em] text-lilac">Colección privada</p>
             <h2 class="mt-2 text-3xl font-bold">Obras vendidas</h2>
           </div>
-
           <div class="flex gap-2">
-            <button
-              id="prevSold"
-              class="focus-ring rounded-full border border-white/20 px-4 py-2"
-              aria-label="Obras anteriores"
-            >←</button>
-            <button
-              id="nextSold"
-              class="focus-ring rounded-full border border-white/20 px-4 py-2"
-              aria-label="Obras siguientes"
-            >→</button>
+            <button id="prevSold" class="focus-ring rounded-full border border-white/20 px-4 py-2" aria-label="Obras anteriores">←</button>
+            <button id="nextSold" class="focus-ring rounded-full border border-white/20 px-4 py-2" aria-label="Obras siguientes">→</button>
           </div>
         </div>
 
         <div id="soldTrack" class="scrollbar-hide mt-8 flex snap-x gap-4 overflow-x-auto scroll-smooth pb-3"></div>
-        <p class="mt-3 text-xs text-white/45">
-          Añade aquí fotos de encargos entregados, con permiso de sus coleccionistas.
-        </p>
+        <p class="mt-3 text-xs text-white/45">Añade aquí fotos de encargos entregados que tengas permiso de publicar.</p>
       </div>
     </section>
 
     <section id="artista" class="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-[.75fr_1.25fr]">
       <div>
         <p class="text-sm uppercase tracking-[.2em] text-lilac">Conoce a la artista</p>
-        <h2 class="mt-2 text-3xl font-bold sm:text-4xl">
-          Donde el arte se encuentra con lo oscuro
-        </h2>
-
+        <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Donde el arte se encuentra con lo oscuro</h2>
         <div class="mt-6 rounded-3xl border border-violet/20 bg-plum/40 p-8 text-center">
           <span class="text-6xl" aria-hidden="true">🖌️</span>
           <p class="mt-4 text-sm text-lilac">Jessi Orianti</p>
@@ -264,29 +200,12 @@
       </div>
 
       <div class="space-y-5 leading-8 text-white/75">
-        <p>
-          Todo comenzó con una certeza: me estaba desperdiciando. Sabía que llevaba dentro algo que necesitaba salir, una creatividad que no podía seguir escondida. Sin formación artística ni instrucciones que seguir, tomé una tabla de madera y comencé a pintar, a crear, a esculpir. No sabía hasta dónde me llevaría aquel impulso; solo sabía que había encontrado una forma de dar vida a lo que habitaba en mi interior.
-        </p>
-
-        <p>
-          Crear es mi refugio, mi libertad y mi manera de explorar aquello que las palabras no siempre pueden expresar. En el arte encuentro paz, pero también un espacio donde la belleza puede convivir con lo inquietante, donde las sombras despiertan curiosidad y lo perturbador adquiere una presencia imposible de ignorar.
-        </p>
-
-        <p>
-          Cada busto, cada pintura y cada pieza que nace de mis manos lleva algo de mí: mi personalidad, mis emociones y mi manera particular de mirar el mundo. Me atrae el poder de las imágenes que provocan una reacción, que capturan la mirada y permanecen en la memoria incluso después de apartar los ojos.
-        </p>
-
-        <p>
-          Pero una obra no termina cuando sale de mis manos. Cobra una nueva vida cuando encuentra a alguien dispuesto a hacerla parte de su propio universo. Me apasiona imaginar mis creaciones en espacios donde el arte se atreve a romper lo convencional, despertar conversaciones y revelar una fascinación por lo oscuro.
-        </p>
-
-        <p>
-          Creo para quienes encuentran belleza en lo inquietante, personalidad en lo macabro y algo irresistible en aquello que no todos se atreven a mirar.
-        </p>
-
-        <p class="font-semibold text-lilac">
-          Porque algunas obras decoran un espacio. Otras cuentan una historia, despiertan una obsesión y dejan una huella.
-        </p>
+        <p>Todo comenzó con una certeza: me estaba desperdiciando. Sabía que llevaba dentro algo que necesitaba salir, una creatividad que no podía seguir escondida. Sin formación artística ni instrucciones que seguir, tomé una tabla de madera y comencé a pintar, a crear, a esculpir. No sabía hasta dónde me llevaría aquel impulso; solo sabía que había encontrado una forma de dar vida a lo que habitaba en mi interior.</p>
+        <p>Crear es mi refugio, mi libertad y mi manera de explorar aquello que las palabras no siempre pueden expresar. En el arte encuentro paz, pero también un espacio donde la belleza puede convivir con lo inquietante, donde las sombras despiertan curiosidad y lo perturbador adquiere una presencia imposible de ignorar.</p>
+        <p>Cada busto, cada pintura y cada pieza que nace de mis manos lleva algo de mí: mi personalidad, mis emociones y mi manera particular de mirar el mundo. Me atrae el poder de las imágenes que provocan una reacción, que capturan la mirada y permanecen en la memoria incluso después de apartar los ojos.</p>
+        <p>Pero una obra no termina cuando sale de mis manos. Cobra una nueva vida cuando encuentra a alguien dispuesto a hacerla parte de su propio universo. Me apasiona imaginar mis creaciones en espacios donde el arte se atreve a romper lo convencional, despertar conversaciones y revelar una fascinación por lo oscuro.</p>
+        <p>Creo para quienes encuentran belleza en lo inquietante, personalidad en lo macabro y algo irresistible en aquello que no todos se atreven a mirar.</p>
+        <p class="font-semibold text-lilac">Porque algunas obras decoran un espacio. Otras cuentan una historia, despiertan una obsesión y dejan una huella.</p>
       </div>
     </section>
 
@@ -297,11 +216,7 @@
         <p class="mx-auto mt-4 max-w-2xl text-white/70">
           Cuéntale a Jessi qué personaje, tamaño o estilo imaginas. Juntas pueden dar forma a una pieza especial para tu colección.
         </p>
-        <a
-          id="customOrder"
-          href="#"
-          class="mt-7 inline-flex rounded-full bg-violet px-6 py-3 font-bold shadow-glow hover:bg-purple-500"
-        >
+        <a id="customOrder" href="#" class="mt-7 inline-flex rounded-full bg-violet px-6 py-3 font-bold shadow-glow hover:bg-purple-500">
           Solicitar encargo por WhatsApp
         </a>
       </div>
@@ -312,20 +227,17 @@
         <p class="text-sm uppercase tracking-[.2em] text-lilac">Voces de coleccionistas</p>
         <h2 class="mt-2 text-3xl font-bold">Lo que cuentan quienes coleccionan</h2>
       </div>
-
       <div class="mt-9 grid gap-5 md:grid-cols-3">
         <blockquote class="card rounded-2xl p-6">
           <p class="text-lilac">★★★★★</p>
           <p class="mt-3 text-white/75">“[Añade aquí una reseña real de un cliente sobre su pieza.]”</p>
           <footer class="mt-4 text-sm text-white/50">— Cliente coleccionista</footer>
         </blockquote>
-
         <blockquote class="card rounded-2xl p-6">
           <p class="text-lilac">★★★★★</p>
           <p class="mt-3 text-white/75">“[Comparte aquí la experiencia de alguien que encargó una obra personalizada.]”</p>
           <footer class="mt-4 text-sm text-white/50">— Cliente coleccionista</footer>
         </blockquote>
-
         <blockquote class="card rounded-2xl p-6">
           <p class="text-lilac">★★★★★</p>
           <p class="mt-3 text-white/75">“[Incluye una opinión autorizada sobre el detalle y acabado de la pieza.]”</p>
@@ -340,50 +252,27 @@
           <p class="text-sm uppercase tracking-[.2em] text-lilac">Hablemos</p>
           <h2 class="mt-2 text-3xl font-bold">Contacto</h2>
           <p class="mt-4 text-white/65">Para consultas, disponibilidad y encargos personalizados.</p>
-          <a href="tel:+50689890021" class="mt-5 inline-block text-lilac hover:underline">
-            +506 8989-0021
-          </a>
+          <a href="tel:+50689890021" class="mt-5 inline-block text-lilac hover:underline">+506 8989-0021</a>
+          <p class="mt-2">
+            <a href="mailto:essigb0917@gmail.com" class="text-lilac hover:underline">essigb0917@gmail.com</a>
+          </p>
         </div>
 
         <form id="emailForm" class="space-y-4">
           <label class="block text-sm">
             Tu nombre
-            <input
-              required
-              name="nombre"
-              class="mt-2 w-full rounded-xl border border-white/15 bg-night px-4 py-3"
-              autocomplete="name"
-            >
+            <input required name="nombre" autocomplete="name" class="mt-2 w-full rounded-xl border border-white/15 bg-night px-4 py-3">
           </label>
-
           <label class="block text-sm">
             Tu correo
-            <input
-              required
-              type="email"
-              name="email"
-              class="mt-2 w-full rounded-xl border border-white/15 bg-night px-4 py-3"
-              autocomplete="email"
-            >
+            <input required type="email" name="email" autocomplete="email" class="mt-2 w-full rounded-xl border border-white/15 bg-night px-4 py-3">
           </label>
-
           <label class="block text-sm">
             ¿Qué tienes en mente?
-            <textarea
-              required
-              name="mensaje"
-              rows="4"
-              class="mt-2 w-full rounded-xl border border-white/15 bg-night px-4 py-3"
-            ></textarea>
+            <textarea required name="mensaje" rows="4" class="mt-2 w-full rounded-xl border border-white/15 bg-night px-4 py-3"></textarea>
           </label>
-
-          <button class="rounded-full bg-violet px-6 py-3 font-bold hover:bg-purple-500">
-            Preparar correo
-          </button>
-
-          <p class="text-xs text-white/45">
-            Se abrirá tu aplicación de correo para enviar el mensaje.
-          </p>
+          <button class="rounded-full bg-violet px-6 py-3 font-bold hover:bg-purple-500">Preparar correo</button>
+          <p class="text-xs text-white/45">Se abrirá tu aplicación de correo para enviar el mensaje.</p>
         </form>
       </div>
     </section>
@@ -408,9 +297,7 @@
     rel="noopener"
     class="focus-ring fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-violet text-2xl shadow-glow"
     aria-label="Escribir por WhatsApp"
-  >
-    ☏
-  </a>
+  >☏</a>
 
   <dialog id="productDialog" class="w-[min(92vw,700px)] rounded-3xl border border-violet/40 bg-[#120a22] p-0 shadow-2xl">
     <div id="dialogContent"></div>
@@ -418,6 +305,7 @@
 
   <script>
     const phone = "50689890021";
+
     const products = [
       {
         name: "Voodoo Doll",
@@ -445,14 +333,14 @@
       },
       {
         name: "Frankenstein",
-        category: "Bustos y esculturas",
-        desc: "Busto esculpido y pintado a mano con carácter clásico.",
+        category: "Decoración y cojines",
+        desc: "Almohada personalizada y pintada a mano.",
         image: "images/frankenstein.jpg"
       },
       {
         name: "Nosferatu",
-        category: "Bustos y esculturas",
-        desc: "Busto expresionista en escala de grises.",
+        category: "Decoración y cojines",
+        desc: "Almohada personalizada y pintada a mano.",
         image: "images/nosferatu.jpg"
       },
       {
@@ -463,25 +351,31 @@
       }
     ];
 
-    const sold = [
+    const soldWorks = [
       { name: "Encargo personalizado", image: "images/vendida-1.jpg" },
       { name: "Pieza de colección", image: "images/vendida-2.jpg" },
       { name: "Obra entregada", image: "images/vendida-3.jpg" }
     ];
 
-    const whatsappLink = (message) =>
+    const whatsappUrl = (message) =>
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-    const productMessage = (name) =>
-      `Hola Jessi, me interesa la pieza ${name} del catálogo de Calavera Creativa. ¿Podríamos coordinar detalles?`;
+    const productGrid = document.querySelector("#productGrid");
+    const productDialog = document.querySelector("#productDialog");
 
-    const grid = document.querySelector("#productGrid");
-    const dialog = document.querySelector("#productDialog");
+    function renderProducts(filter = "Todos") {
+      const visibleProducts = products.filter((product) =>
+        filter === "Todos" || product.category === filter
+      );
 
-    function createProductCard(product) {
-      return `
-        <article class="card group overflow-hidden rounded-2xl transition duration-300">
-          <button class="product-open block w-full text-left" data-name="${product.name}">
+      productGrid.innerHTML = visibleProducts.map((product, index) => `
+        <article class="card group overflow-hidden rounded-2xl">
+          <button
+            type="button"
+            class="product-open block w-full text-left"
+            data-index="${products.indexOf(product)}"
+            aria-label="Ver detalles de ${product.name}"
+          >
             <div class="art-image relative aspect-[4/3] overflow-hidden">
               <img
                 src="${product.image}"
@@ -490,57 +384,47 @@
                 class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"
               >
-              <div class="absolute inset-0 hidden place-items-center text-center" aria-hidden="true">
+              <div class="absolute inset-0 hidden place-items-center text-center text-lilac">
                 <span>
-                  <span class="block text-5xl">☠</span>
-                  <small class="mt-2 block text-lilac">Añade la foto de ${product.name}</small>
+                  <span class="block text-5xl" aria-hidden="true">☠</span>
+                  <small class="mt-2 block">No se encontró la imagen de ${product.name}</small>
                 </span>
               </div>
             </div>
-
             <div class="p-5">
               <p class="text-xs uppercase tracking-widest text-lilac">${product.category}</p>
               <h3 class="mt-2 text-xl font-bold">${product.name}</h3>
-              <p class="mt-2 line-clamp-2 text-sm leading-6 text-white/60">${product.desc}</p>
+              <p class="mt-2 text-sm leading-6 text-white/60">${product.desc}</p>
               <span class="mt-4 inline-block text-sm font-semibold text-lilac">Ver detalles →</span>
             </div>
           </button>
-
           <div class="px-5 pb-5">
             <a
               target="_blank"
               rel="noopener"
-              href="${whatsappLink(productMessage(product.name))}"
+              href="${whatsappUrl(`Hola Jessi, me interesa la pieza ${product.name} del catálogo de Calavera Creativa. ¿Podríamos coordinar detalles?`)}"
               class="block rounded-full border border-violet/50 px-4 py-2.5 text-center text-sm font-semibold text-lilac hover:bg-violet/15"
             >
               Consultar / Cotizar por WhatsApp
             </a>
           </div>
         </article>
-      `;
-    }
+      `).join("");
 
-    function renderProducts(filter = "Todos") {
-      const visibleProducts = products.filter(
-        (product) => filter === "Todos" || product.category === filter
-      );
-
-      grid.innerHTML = visibleProducts.map(createProductCard).join("");
-
-      grid.querySelectorAll(".product-open").forEach((button) => {
+      productGrid.querySelectorAll(".product-open").forEach((button) => {
         button.addEventListener("click", () => {
-          const product = products.find((item) => item.name === button.dataset.name);
+          const product = products[Number(button.dataset.index)];
 
           document.querySelector("#dialogContent").innerHTML = `
             <div class="flex items-center justify-between border-b border-white/10 p-5">
               <p class="text-xs uppercase tracking-widest text-lilac">${product.category}</p>
               <button
+                type="button"
                 id="closeDialog"
                 class="rounded-full border border-white/15 px-3 py-1"
-                aria-label="Cerrar"
+                aria-label="Cerrar ventana"
               >✕</button>
             </div>
-
             <div class="grid md:grid-cols-2">
               <div class="art-image relative min-h-64">
                 <img
@@ -549,16 +433,17 @@
                   class="absolute h-full w-full object-cover"
                   onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"
                 >
-                <div class="absolute inset-0 hidden place-items-center text-6xl" aria-hidden="true">☠</div>
+                <div class="absolute inset-0 hidden place-items-center text-center text-lilac">
+                  No se encontró la imagen
+                </div>
               </div>
-
               <div class="p-6">
                 <h3 class="text-2xl font-bold">${product.name}</h3>
                 <p class="mt-4 leading-7 text-white/70">${product.desc}</p>
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="${whatsappLink(productMessage(product.name))}"
+                  href="${whatsappUrl(`Hola Jessi, me interesa la pieza ${product.name} del catálogo de Calavera Creativa. ¿Podríamos coordinar detalles?`)}"
                   class="mt-6 block rounded-full bg-violet px-5 py-3 text-center font-bold"
                 >
                   Consultar / Cotizar por WhatsApp
@@ -567,11 +452,8 @@
             </div>
           `;
 
-          dialog.showModal();
-
-          document.querySelector("#closeDialog").addEventListener("click", () => {
-            dialog.close();
-          });
+          productDialog.showModal();
+          document.querySelector("#closeDialog").addEventListener("click", () => productDialog.close());
         });
       });
     }
@@ -587,19 +469,18 @@
 
         button.classList.add("bg-violet", "font-semibold");
         button.classList.remove("border", "border-white/15");
-
         renderProducts(button.dataset.filter);
       });
     });
 
     const soldTrack = document.querySelector("#soldTrack");
 
-    soldTrack.innerHTML = sold.map((item) => `
+    soldTrack.innerHTML = soldWorks.map((work) => `
       <article class="card min-w-[80%] snap-center overflow-hidden rounded-2xl sm:min-w-[42%] lg:min-w-[31%]">
         <div class="art-image relative aspect-[4/3]">
           <img
-            src="${item.image}"
-            alt="${item.name}"
+            src="${work.image}"
+            alt="${work.name}"
             loading="lazy"
             class="h-full w-full object-cover"
             onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"
@@ -608,7 +489,7 @@
             Añade una foto de obra vendida
           </div>
         </div>
-        <p class="p-4 font-semibold">${item.name}</p>
+        <p class="p-4 font-semibold">${work.name}</p>
       </article>
     `).join("");
 
@@ -624,10 +505,9 @@
     const nav = document.querySelector("#nav");
 
     menuToggle.addEventListener("click", () => {
-      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
-
-      menuToggle.setAttribute("aria-expanded", String(!expanded));
-      nav.classList.toggle("hidden", expanded);
+      const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+      nav.classList.toggle("hidden", isExpanded);
     });
 
     nav.querySelectorAll("a").forEach((link) => {
@@ -637,11 +517,11 @@
       });
     });
 
-    document.querySelector("#customOrder").href = whatsappLink(
+    document.querySelector("#customOrder").href = whatsappUrl(
       "Hola Jessi, quisiera consultar sobre un encargo personalizado para Calavera Creativa."
     );
 
-    document.querySelector("#whatsappFloat").href = whatsappLink(
+    document.querySelector("#whatsappFloat").href = whatsappUrl(
       "Hola Jessi, quisiera información sobre Calavera Creativa."
     );
 
@@ -655,17 +535,17 @@
         `${formData.get("mensaje")}`;
 
       const subject = encodeURIComponent("Consulta para Calavera Creativa");
-      const encodedBody = encodeURIComponent(body);
+      const message = encodeURIComponent(body);
 
       window.location.href =
-        `mailto:essigb0917@gmail.com?subject=${subject}&body=${encodedBody}`;
+        `mailto:essigb0917@gmail.com?subject=${subject}&body=${message}`;
     });
 
     document.querySelector("#year").textContent = new Date().getFullYear();
 
-    dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) {
-        dialog.close();
+    productDialog.addEventListener("click", (event) => {
+      if (event.target === productDialog) {
+        productDialog.close();
       }
     });
   </script>
