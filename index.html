@@ -28,46 +28,58 @@
 
   <style>
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       background: #090514;
       color: #f3f4f6;
       font-family: Inter, ui-sans-serif, system-ui, sans-serif;
     }
+
     .mist {
       background:
         radial-gradient(ellipse at 15% 25%, #7e22ce2e, transparent 34%),
         radial-gradient(ellipse at 85% 65%, #a855f71c, transparent 35%),
         linear-gradient(135deg, #090514, #120a22 55%, #090514);
     }
+
     .card {
       background: linear-gradient(145deg, #29164a99, #120a22);
       border: 1px solid #d8b4fe24;
       transition: transform .25s, border-color .25s, box-shadow .25s;
     }
+
     .card:hover {
       border-color: #b026ff99;
       box-shadow: 0 0 28px #b026ff25;
       transform: translateY(-4px);
     }
+
     .art-image {
       background: radial-gradient(circle at 50% 35%, #542879, #1a102b 65%, #100a1c);
     }
+
     .focus-ring:focus-visible {
       outline: 2px solid #d8b4fe;
       outline-offset: 3px;
     }
+
     dialog {
       color: #f3f4f6;
       max-height: 90vh;
     }
+
     dialog::backdrop {
       background: #05020bd9;
       backdrop-filter: blur(5px);
     }
+
     .scrollbar-hide::-webkit-scrollbar { display: none; }
+
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+      *,
+      *::before,
+      *::after {
         scroll-behavior: auto !important;
         transition: none !important;
       }
@@ -80,7 +92,7 @@
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
       <a href="#inicio" class="focus-ring flex items-center gap-3 rounded-lg" aria-label="Calavera Creativa, inicio">
         <img
-          src="logo-calavera-creativa.png"
+          src="./Logo.jpg"
           alt="Logo de Calavera Creativa"
           class="h-12 w-12 rounded-full object-cover"
           onerror="this.style.display='none'"
@@ -108,7 +120,7 @@
           <a class="hover:text-lilac" href="#catalogo">Catálogo</a>
           <a class="hover:text-lilac" href="#artista">Sobre la artista</a>
           <a class="hover:text-lilac" href="#encargos">Encargos</a>
-          <a class="hover:text-lilac" href="#vendidas">Obras vendidas</a>
+          <a class="hover:text-lilac" href="#vendidas">Obras destacadas</a>
           <a class="hover:text-lilac" href="#contacto">Contacto</a>
           <a class="rounded-full border border-violet/60 px-4 py-2 text-lilac hover:bg-violet/15" href="tel:+50689890021">
             +506 8989-0021
@@ -175,8 +187,8 @@
       <div class="mx-auto max-w-7xl px-5">
         <div class="flex items-end justify-between gap-4">
           <div>
-            <p class="text-sm uppercase tracking-[.2em] text-lilac">Colección privada</p>
-            <h2 class="mt-2 text-3xl font-bold">Obras vendidas</h2>
+            <p class="text-sm uppercase tracking-[.2em] text-lilac">Galería de piezas</p>
+            <h2 class="mt-2 text-3xl font-bold">Obras destacadas</h2>
           </div>
           <div class="flex gap-2">
             <button id="prevSold" class="focus-ring rounded-full border border-white/20 px-4 py-2" aria-label="Obras anteriores">←</button>
@@ -185,7 +197,6 @@
         </div>
 
         <div id="soldTrack" class="scrollbar-hide mt-8 flex snap-x gap-4 overflow-x-auto scroll-smooth pb-3"></div>
-        <p class="mt-3 text-xs text-white/45">Añade aquí fotos de encargos entregados que tengas permiso de publicar.</p>
       </div>
     </section>
 
@@ -311,54 +322,57 @@
         name: "Voodoo Doll",
         category: "Evil Dolls",
         desc: "Muñeca vudú artesanal presentada en una caja con forma de ataúd.",
-        image: "images/voodoo-doll.jpg"
+        image: "./Voodoo%20Doll.jpeg"
       },
       {
         name: "The Nun",
         category: "Bustos y esculturas",
         desc: "Busto detallado inspirado en la inquietante figura de La Monja.",
-        image: "images/the-nun.jpg"
+        image: "./The%20Nun.jpeg"
       },
       {
         name: "Jason Voorhees",
         category: "Bustos y esculturas",
         desc: "Busto con máscara de hockey y peana, creado y pintado a mano.",
-        image: "images/jason-voorhees.jpg"
+        image: "./Jason%20Voorhees.jpeg"
       },
       {
         name: "Sandworm",
         category: "Bustos y esculturas",
         desc: "Escultura del gusano de arena inspirada en Beetlejuice.",
-        image: "images/sandworm.jpg"
+        image: "./Sandworm.jpeg"
       },
       {
         name: "Frankenstein",
         category: "Decoración y cojines",
         desc: "Almohada personalizada y pintada a mano.",
-        image: "images/frankenstein.jpg"
+        image: "./Frankenstein.jpeg"
       },
       {
         name: "Nosferatu",
         category: "Decoración y cojines",
         desc: "Almohada personalizada y pintada a mano.",
-        image: "images/nosferatu.jpg"
+        image: "./Nosferatu.jpeg"
       },
       {
         name: "Cojines de colección",
         category: "Decoración y cojines",
         desc: "Cojines decorativos de Jack Skellington y Oogie Boogie.",
-        image: "images/cojines-halloween.jpg"
+        image: "./Cojines%20decorativos%20de%20Jack%20Skellington%20y%20Oogie%20Boogie.jpeg"
       }
     ];
 
-    const soldWorks = [
-      { name: "Encargo personalizado", image: "images/vendida-1.jpg" },
-      { name: "Pieza de colección", image: "images/vendida-2.jpg" },
-      { name: "Obra entregada", image: "images/vendida-3.jpg" }
+    const galleryWorks = [
+      { name: "Voodoo Doll", image: "./Voodoo%20Doll.jpeg" },
+      { name: "The Nun", image: "./The%20Nun.jpeg" },
+      { name: "Jason Voorhees", image: "./Jason%20Voorhees.jpeg" },
+      { name: "Frankenstein", image: "./Frankenstein.jpeg" },
+      { name: "Nosferatu", image: "./Nosferatu.jpeg" }
     ];
 
-    const whatsappUrl = (message) =>
-      `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    function whatsappUrl(message) {
+      return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    }
 
     const productGrid = document.querySelector("#productGrid");
     const productDialog = document.querySelector("#productDialog");
@@ -368,12 +382,12 @@
         filter === "Todos" || product.category === filter
       );
 
-      productGrid.innerHTML = visibleProducts.map((product, index) => `
+      productGrid.innerHTML = visibleProducts.map((product) => `
         <article class="card group overflow-hidden rounded-2xl">
           <button
             type="button"
             class="product-open block w-full text-left"
-            data-index="${products.indexOf(product)}"
+            data-name="${product.name}"
             aria-label="Ver detalles de ${product.name}"
           >
             <div class="art-image relative aspect-[4/3] overflow-hidden">
@@ -398,6 +412,7 @@
               <span class="mt-4 inline-block text-sm font-semibold text-lilac">Ver detalles →</span>
             </div>
           </button>
+
           <div class="px-5 pb-5">
             <a
               target="_blank"
@@ -413,7 +428,7 @@
 
       productGrid.querySelectorAll(".product-open").forEach((button) => {
         button.addEventListener("click", () => {
-          const product = products[Number(button.dataset.index)];
+          const product = products.find((item) => item.name === button.dataset.name);
 
           document.querySelector("#dialogContent").innerHTML = `
             <div class="flex items-center justify-between border-b border-white/10 p-5">
@@ -425,6 +440,7 @@
                 aria-label="Cerrar ventana"
               >✕</button>
             </div>
+
             <div class="grid md:grid-cols-2">
               <div class="art-image relative min-h-64">
                 <img
@@ -437,6 +453,7 @@
                   No se encontró la imagen
                 </div>
               </div>
+
               <div class="p-6">
                 <h3 class="text-2xl font-bold">${product.name}</h3>
                 <p class="mt-4 leading-7 text-white/70">${product.desc}</p>
@@ -469,13 +486,14 @@
 
         button.classList.add("bg-violet", "font-semibold");
         button.classList.remove("border", "border-white/15");
+
         renderProducts(button.dataset.filter);
       });
     });
 
     const soldTrack = document.querySelector("#soldTrack");
 
-    soldTrack.innerHTML = soldWorks.map((work) => `
+    soldTrack.innerHTML = galleryWorks.map((work) => `
       <article class="card min-w-[80%] snap-center overflow-hidden rounded-2xl sm:min-w-[42%] lg:min-w-[31%]">
         <div class="art-image relative aspect-[4/3]">
           <img
@@ -486,7 +504,7 @@
             onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"
           >
           <div class="absolute inset-0 hidden place-items-center text-center text-lilac">
-            Añade una foto de obra vendida
+            No se encontró la imagen de ${work.name}
           </div>
         </div>
         <p class="p-4 font-semibold">${work.name}</p>
